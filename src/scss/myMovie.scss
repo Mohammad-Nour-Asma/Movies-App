@@ -1,0 +1,36 @@
+@import "./src/common/color.scss";
+.heading {
+  color: white;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 0px 5px 4px #6a16ff;
+}
+
+.con {
+  margin: 1rem auto;
+  padding: 3.5rem;
+  background-color: $gray;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 3px 13px 0px #4f3783;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  img {
+    max-width: 48%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .info {
+    a {
+      font-size: 1.2rem;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "./src/common/color.scss";
+
+.header {
+  position: sticky;
+  box-shadow: 0px 3px 13px 0px #4f3783;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: $gray;
+  padding: 1rem 4rem;
+  .search-fav {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+
+    font-weight: 900;
+    text-decoration: none;
+    box-shadow: 0 0 18px 5px #653da8, inset 0px 2px 20px 13px #653da8;
+    border-radius: 7px;
+    padding: 0.5rem;
+    span {
+      margin-left: 0.4rem;
+      text-align: center;
+
+      bottom: -5px;
+      position: relative;
+    }
+  }
+
+  .fav {
+    font-size: 2.1rem;
+    color: #fe1a1a;
+    display: flex;
+    position: relative;
+    .times {
+      position: absolute;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: bold;
+      color: black;
+      background-color: white;
+      border-radius: 50%;
+      line-height: -10px;
+      width: 20px;
+      height: 20px;
+      top: 9%;
+      left: 80%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .header .fav {
+    font-size: 2rem;
+  }
+}

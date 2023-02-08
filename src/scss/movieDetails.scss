@@ -1,0 +1,82 @@
+@import "./src/common/color.scss";
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  min-height: 50vh;
+  .info {
+    color: white;
+    flex-basis: 50%;
+    line-height: 1.4;
+    .rate-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .rate {
+        background-color: #ededed;
+        width: 9rem;
+        height: 1.1rem;
+        position: relative;
+        border-radius: 0.3rem;
+        .gold {
+          height: 100%;
+          position: absolute;
+          background-color: gold;
+          border-radius: 0.3rem;
+        }
+      }
+      span {
+        color: #ffffff75;
+        font-size: 2.3rem;
+        font-style: italic;
+      }
+    }
+    .heart {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: 0.2s;
+      margin-top: 2rem;
+      &:hover {
+        color: #fe1a1a;
+      }
+      &.red {
+        color: #fe1a1a;
+      }
+    }
+  }
+  .img-container {
+    img {
+      width: 100%;
+    }
+  }
+}
+.loading {
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  margin: 4rem;
+}
+
+@media (max-width: 767px) {
+  .details {
+    flex-direction: column-reverse;
+  }
+  .details .info .rate-info span {
+    font-size: 1.7rem;
+  }
+  .details .info .rate-info .rate {
+    width: 6rem;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 210px) {
+  .details .info .rate-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

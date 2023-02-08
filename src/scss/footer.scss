@@ -1,0 +1,11 @@
+@import "./src/common/color.scss";
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  width: 100%;
+  background-color: $gray;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 3rem;
+}

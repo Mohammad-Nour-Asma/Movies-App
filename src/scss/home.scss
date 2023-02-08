@@ -1,0 +1,106 @@
+@import "./src/common/color.scss";
+
+.home {
+  .slider {
+    margin-top: 1.5rem;
+  }
+  .img-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .movie-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-decoration: none;
+    .movie-card {
+      color: white;
+      text-decoration: none;
+      padding: 0.7rem;
+      transition: 0.2s;
+      border-radius: 10px;
+      a {
+        text-decoration: none;
+      }
+      &:hover {
+        box-shadow: inset -2px -15px 20px 0px #653da847;
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        button {
+          background-color: transparent;
+          border: none;
+          color: white;
+          font-size: 1.2rem;
+          transition: 0.2s;
+          margin-top: 0.2rem;
+          &:hover {
+            color: #f83e3e;
+          }
+        }
+      }
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      .name {
+        margin: 0.8rem 0 0 0;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+      }
+      .year {
+        margin: 0.4rem 0 0 0;
+        font-weight: normal;
+        text-decoration: none;
+        color: #585c6e;
+      }
+
+      .heart {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 0.2s;
+        margin-top: 0.5rem;
+        text-align: end;
+        margin: 0.2rem 0 0.2rem auto;
+        display: block;
+        &:hover {
+          color: #fe1a1a;
+        }
+      }
+    }
+  }
+  .heading {
+    color: white;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 0px 5px 4px #6a16ff;
+  }
+}
+@media (max-width: 479px) {
+  .home .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.red {
+  color: #ff4242;
+}
