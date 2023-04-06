@@ -46,14 +46,17 @@ const dataSlice = createSlice({
   extraReducers: {
     [getItems.pending]: (state) => {
       state.loading = true;
+      console.log("loading");
     },
     [getItems.fulfilled]: (state, action) => {
       state.loading = false;
       state.data = action.payload;
+      console.log("fullfill");
     },
     [getItems.rejected]: (state) => {
       state.isLoading = false;
       state.faild = true;
+      console.log("rejected");
     },
   },
 });
