@@ -9,10 +9,10 @@ const MovieList = ({ section }) => {
   useEffect(() => {
     dispatch(getItems("avengers"));
   }, []);
-
   const { data } = useSelector((store) => {
     return store.data;
   });
+  console.log(data);
 
   return (
     <section className="container">
